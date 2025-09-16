@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Online Resume</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Including CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img src="images/lebron.jpg" alt="pfp-pic" id="profile-pic">
+  <!-- introducition div -->
+
+  <div class="introduction">
+    <h3>Hi, I'm</h3>
+    <h1><span id="first">Phuc Huynh</span> Tan</h1>
+    <h3>Software Developer</h3>
+    <h4>s4103131@rmit.edu.vn</h4>
+  </div>
+<!-- Education div -->
+<h1>Education</h1> <!--heading -->
+<div class="Education">
+    <ul id="education"></ul>
+    <label for="degree" >Degree:</label>
+    <input type="text" id="degree" name="Degree" required placeholder="Bachelor of IT">
+
+    <label for="institution" >Institution:</label> <!-- Updated id text to match scriptEducation.js lookup -->
+    <input type="text" id="institution" name="Institution" required placeholder="RMIT VietNam"> 
+
+    <label for="duration">Duration:</label>
+    <input type="text" id="duration" name="Duration" required placeholder="2024-2027(expected)">
+
+    <label for="description">Description:</label>
+    <textarea  id="description" name="Description" placeholder="More info about your degree" rows="4" cols="50"></textarea>
+
+    <button id="submit-button">Submit</button>
+    
+</div>
+
+<!-- Skills Div -->
+<h1>Skills</h1>
+<div class="skills">
+  <ul id="skills"></ul>
+  <input type="text" id="item-input" placeholder="Enter new skills">
+  <button id="add-btn">Submit</button>
+  
+</div>
+<script src="scriptSkills.js"></script>
+<script src="scriptEducation.js"></script>
+
+
+<!-- Footer of page -->
+
+</body>
+<footer>Crafted by <span id="footer">Phuc Huynh Tan 🤏</span></footer>
+
+</html>
+

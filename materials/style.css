@@ -1,0 +1,120 @@
+/* Your stylings here */
+
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+:root{
+    font-family: "Sansation", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+body{
+    border:5px black solid;
+    padding:10px;
+    border-radius: 8px;
+}
+#profile-pic{
+    border-radius: 100%;
+    border: solid blue 1px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.introduction{
+    text-align: center;
+    font-size: 30px;
+}
+span{
+    color:blue;
+}   
+.introduction > h4{
+    font-style: italic;
+}
+
+.Education{
+    display: grid;
+    gap: 8px 12px;
+    font-size: 30px;
+}
+.Education > input{
+    font-size: 20px;
+}
+.Education > textarea{
+    font-size: 20px;
+}
+
+.skills > button{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(0, 0, 255);
+}
+/* Skills edit */
+.skills{
+    font-size: 30px;
+    
+    gap:8px 12px;
+}
+.skills > input{
+    font-size: 30px;
+}
+.skills > button{
+    font-size: 30px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    width: 100%;
+}
+#item-input{
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+}
+.pill{
+    display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: lightgrey;   /* background color */
+  color: red;             /* text color */
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin: 6px;
+  font-size: 30px;
+}
+
+/* Footer edits */
+#footer{
+    font-weight: bold;
+}
+footer{
+    font-size: 30px;
+    text-align: center;
+}
+
+#education{
+    border:1px solid;
+    background-color: lightblue;
+
+}
+.edu-card{
+    background-color: #f5f6ff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    list-style: none;
+    gap:8px;
+}
+.edu-card strong {
+  font-size: 1.1rem;
+}
+.edu-card p {
+  margin-top: 0.5rem;
+}
+.Education > button {
+    font-size: 30px;
+    background-color: rgb(0, 0, 255);
+    color: white;
+}
+.remove{
+    font-size: 30px;
+    background-color: black;
+}
