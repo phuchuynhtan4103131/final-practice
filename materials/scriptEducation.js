@@ -14,7 +14,7 @@ const educations = [
   }
 ];
 
-// using ul, li
+//call the IDs from html using getElementById()
 const deInput = document.getElementById("degree");
 const intIns = document.getElementById("institution");
 const duInput = document.getElementById("duration");
@@ -23,10 +23,10 @@ const edu = document.getElementById("education");
 const btns = document.getElementById("submit-button");
 
 function enterEducation(education, index) {
-  const li = document.createElement("li");
-  li.className = "edu-card";
-  li.dataset.index = index;
-  li.innerHTML = `<strong>${education.degree}</strong><br>
+  const li = document.createElement("li");//create new list named li 
+  li.className = "edu-card";//declare its name
+  li.dataset.index = index; //Adds a custom data attribute to the <li> and any attribute starting with data- is considered a data attribute
+  li.innerHTML = `<strong>${education.degree}<,/strong><br>
                   ${education.institution}<br>
                   ${education.duration}
                   <p>${education.description}</p>
@@ -37,7 +37,7 @@ function enterEducation(education, index) {
 function renderEdu() {
   edu.innerHTML = "";
   educations.forEach((education, index) => {
-    edu.appendChild(enterEducation(education, index));
+    edu.appendChild(enterEducation(education, index));//for each values inputed, appendChild to enterEducation() 
   });
 }
 

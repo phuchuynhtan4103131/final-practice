@@ -14,15 +14,15 @@ const skills = [
 
 const input = document.getElementById("item-input");
 const btn = document.getElementById("add-btn");
-const list = document.getElementById("skills")
+const list = document.getElementById("skills");
 
 // Rendering to screen
 function enterSkillItems(skill){
   const newLi = document.createElement("li")
   newLi.className = "pill";
   newLi.innerHTML = `<span>${skill}</span>
-    <button class="remove" title="Remove">🗑️</button>
-  `;
+    <button class="remove" title="Remove">🗑️</button> 
+  `;//adding remove button 
   return newLi;
 }
 
@@ -30,7 +30,7 @@ function enterSkillItems(skill){
 function renderAll(){
   list.innerHTML = ""
   skills.forEach( s => {
-    list.appendChild(enterSkillItems(s));
+    list.appendChild(enterSkillItems(s)); //for each input typed in, append to enterSkillItems();
   });
 }
 
@@ -38,13 +38,13 @@ function renderAll(){
 function addSkill(){
     const text = input.value.trim();
     if(text === ""){
-      return;
+      return;//if input is [] return null,  
     }
     skills.push(text);
-    list.appendChild(enterSkillItems(text));
+    list.appendChild(enterSkillItems(text)); //else input will be added to array and append to enterSkillItems
 
-    input.value="";
-    input.focus();
+    input.value="";//clears textbox after input is entered
+    input.focus();//focus the cursor to left
 }
 
 // Remove SKills
@@ -60,7 +60,7 @@ list.addEventListener("click", (e) => {
 });
 
 
-btn.addEventListener("click",addSkill);
+btn.addEventListener("click",addSkill);//declare and add button using eventListener
 input.addEventListener("keydown", e =>{
   if (e.key === "Enter") addSkill();
 });
